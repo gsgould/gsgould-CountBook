@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.ghvideos.counter.individualTimerActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_drawable">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <!--
+    <TextView
+        android:id="@+id/textViewCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COUNT"
+        android:textColor="@color/White"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" /> -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:layout_marginRight="40dp"
+            android:background="@color/White"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewCurrentCount"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/White"
+            android:textSize="100dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:layout_marginLeft="40dp"
+            android:background="@color/White"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:text="RESET"
+        android:layout_gravity="center"
+        android:textColor="@color/White"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editComments"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:background="@color/White"
+        android:layout_gravity="center"
+        android:hint="Insert Comments"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textViewDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Changed "
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:textStyle="bold"
+         />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:textColor="@color/White"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            />
+
+
+
+        <TextView
+            android:id="@+id/textInitialLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Initial:"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/editInitial"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:background="@color/Black"
+            android:textColor="@color/White"
+            android:text="DELETE"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:background="@color/Black"
+            android:textColor="@color/White"
+            android:text="SAVE"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
